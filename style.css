@@ -328,11 +328,13 @@
 }
 
 
-    @media (max-width: 400px) {
+    @media (min-width: 260px) and (max-width: 460px) {
     .hero {
+        width: calc(100% - 40px);
         flex-direction: column-reverse;
         text-align: center;
         gap: 4.5rem;
+
     }
 
     .hero-img img {
@@ -364,10 +366,15 @@
     .header {
         padding-left: 5%;
         padding-right: 5%;
+        width: calc(100% - 40px);
     }
 
     .hamburger {
         display: block;
+        margin-right: 1rem;
+        font-size: 1.6rem;
+        color: #2f2105;
+        font-weight: 800;
     }
 
     .nav {
@@ -389,7 +396,7 @@
         display: block;
     }
 
-    .navItems a {
+    .navItems > a {
         display: block;
         padding: 12px 0;
         margin: 10px 0;
